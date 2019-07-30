@@ -28,7 +28,7 @@ start_area[7][7] = ALIVE
 
 def print_area(area):
     for i, h in enumerate(area):
-        for j, w in enumerate(h):
+        for j in range(len(h)):
             value = area[i][j]
             if value == ALIVE:
                 print(f"\x1b[0;30;43m{value}\x1b[0m", end=" ")
