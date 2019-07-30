@@ -83,7 +83,6 @@ def process_next_generation(area):
             if new_state:
                 new_area[i][j] = new_state
     print()
-    del area
     return new_area
 
 
